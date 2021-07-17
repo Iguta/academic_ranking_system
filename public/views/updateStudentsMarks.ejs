@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Update Students Marks</title>
+		<link rel="stylesheet" href="/updateStudentsMarks.css"/>
+	</head>
+	<body>
+		<h3>Update Student's Marks</h3>
+		<div class="form">
+			<form class="student-marks" method="post" action="post-update-students-marks">
+				<div>
+					<label for="studentId">Enter student ID:</label>
+					<input 
+						   type="number"
+							required
+						   	min="1"
+						   	size="2"
+							autofocus
+						   	placeholder="Student ID"
+							id="studentId"
+						   name="studentId"
+						   />
+				</div>
+				<div>
+					<label for="subjects">Choose subject to update:</label>
+					<input
+						   list="subjects"
+                           required
+                           name="subject"
+						   />
+					<datalist id="subjects">
+						<option>Maths</option>
+						<option>English</option>
+						<option>Kiswahili</option>
+						<option>Science</option>
+						<option>GHC_CRE</option>
+					</datalist>
+                </div>
+                <div>
+                    <label for="valueToUpdate">Enter Value:</label>
+                    <input
+                    id="valueToUpdate"
+                    name="marks"
+                    type="number"
+                    min="1"
+                    max="99"
+                    required
+                    />
+                </div>
+				<div>
+					<input type="submit"
+						   value="UPDATE"
+						   id="updateButtn"
+						   />
+				</div>
+			</form>
+
+		</div>
+
+	</body>
+</html>

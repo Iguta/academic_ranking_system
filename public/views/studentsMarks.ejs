@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Enter Student's Marks</title>
+		<link rel="stylesheet" href="/studentsMarks.css"/>
+	</head>
+	<body>
+		<h3>Enter Student's Marks:</h3>
+		<div class="form">
+			<form class="student-marks" method="post" action="post-students-marks">
+				<div>
+					<label for="studentId">Enter student ID:</label>
+					<input
+						   type="number"
+							placeholder="student ID"
+							required
+							autofocus
+							id="studentId"
+							min='1'
+						   size='3'
+						   name="studentId"
+						   />
+				</div>
+				<div>
+					<label for="maths">Maths:</label>
+					<input
+						   type="number"
+							placeholder="Maths"
+							required
+							id="maths"
+							min='1'
+							max="99"
+						   size='2'
+						   name="Maths"
+						   />
+				</div>
+				<div>
+					<label for="english">English:</label>
+					<input
+						   type="number"
+							placeholder="English"
+							required
+							id="english"
+							min='1'
+							max="99"
+						   size='2'
+						   name="English"
+						   />
+				</div>
+				<div>
+					<label for="kiswahili">Kiswahili:</label>
+					<input
+						   type="number"
+							placeholder="Kiswahili"
+							required
+							id="kiswahili"
+							min='1'
+							max="99"
+						   size='2'
+						   name="Kiswahili"
+						   />
+				</div>
+				<div>
+					<label for="science">Science:</label>
+					<input
+						   type="number"
+							placeholder="Science"
+							required
+							id="scence"
+							min='1'
+							max="99"
+						   size='2'
+						   name="Science"
+						   />
+				</div>
+
+				<div>
+					<label for="GHC_CRE">GHC_CRE:</label>
+					<input
+						   type="number"
+							placeholder="GHC_CRE"
+							required
+							id="GHC_CRE"
+							min='1'
+							max="99"
+						   size='2'
+						   name="GHC_CRE"
+						   />
+				</div>
+				<div>
+					<input
+						   type="submit"
+						   value="ENTER"
+						   id='submitButton'
+						   />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

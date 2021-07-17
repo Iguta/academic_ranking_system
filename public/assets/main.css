@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 60px;
+    background-color: black;
+    align-content: center;
+    text-align: center;
+    /*
+	vertical-align: middle;
+	align-items:center;
+*/
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav ul li {
+    /*	display: inline-block;*/
+    /*	text-decoration: none;*/
+    /*	margin-top: 30px;*/
+    /*	text-align: center;*/
+    vertical-align: middle;
+    flex: 1;
+    list-style: none;
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li:hover {
+    background-color: fuchsia;
+}
+
+nav {
+    margin-top: 30px;
+    opacity: 0.7;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: solid 5px green;
+}
+
+.academics {
+    display: flex;
+    width: 280px;
+    height: 320px;
+    background-color: chocolate;
+    /*
+	position: relative;
+	left: 350px;
+*/
+    position: relative;
+    top: 28px;
+    left: 10px;
+    visibility: hidden;
+    opacity: 0.8;
+}
+
+#academics:hover #academicsTab {
+    visibility: visible;
+}
+
+.academics ul li a {
+    text-decoration: none;
+    font-size: 15px
+}
+
+.academics ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.academics ul li {
+    flex: auto;
+    list-style: none;
+    text-align: center;
+    width: 280px;
+    border-bottom: solid 2px black;
+    padding-top: 13px;
+    border-radius: 0px;
+}
+
+.academics ul li:hover {
+    background-color: brown;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    flex: auto;
+    position: relative;
+    top: -10px
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    border-top: solid 4px green;
+}
+
+#profile-photo {
+    text-align: center;
+    margin: auto;
+}
+
+footer h3,
+h4 {
+    color: white;
+    position: relative;
+    line-height: 150%;
+    top: -30px;
+    font-weight: 100;
+}
+
+body {
+    background-image: url('/imgs/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-position: center;
+    animation-name: backgroundPosition;
+    animation-duration: 20s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*	perspective: 20;*/
+}
+
+@keyframes backgroundPosition {
+    from {
+        background-position: center;
+    }
+    to {
+        background-position: top;
+    }
+}

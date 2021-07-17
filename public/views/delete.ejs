@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete</title>
+        <link rel="stylesheet" href="/delete.css"/>
+    </head>
+    <body>
+        <div class="form">
+            <h3>Delete</h3>
+            <form action="post-delete" method="post" class="delete-form">
+                <div>
+                    <label for="studentId">Enter student Id:</label>
+                    <input
+                           type="number"
+                           min="1"
+                           size="3"
+                           required
+                           autofocus
+                           name="studentId"
+                           placeholder="student ID"
+                           id="studentId"
+                           />
+                </div>
+                <div>
+                    <label for="delete-option">Delete:</label>
+                    <input
+                           list="delete-options"
+                           id="delete-option"
+                           required
+                           name="entryToDelete"
+                           />
+                    <datalist id="delete-options">
+                        <option>Student's Personal Infor</option>
+                        <option>Student's Marks</option>
+                    </datalist>
+                    <h5>Note: Deleting Personal Infor entry automatically erases all student details including student's marks</h5>
+                </div>
+                <div>
+                    <input
+                           type="submit"
+                           value="DELETE"
+                           id="button"
+                           />
+                </div>
+                
+                
+            </form>
+        </div>
+    </body>
+</html>

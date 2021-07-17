@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet"  href="/search.css"/>
+    </head>
+    <body>
+        <div class="form">
+            <h3>Search </h3>
+            <form class="search-form" method="post" action="post-search">
+                <div>
+                    <label for="studentId">Enter student ID:</label>
+                    <input
+                           type="number"
+                           min="1"
+                           size="3"
+                           placeholder="student ID"
+                           required
+                           autofocus
+                           name="studentId"
+                           />
+                </div>
+                <div>
+                    <label for="search-options">search for:</label>
+                    <input
+                           list="options"
+                           id="search-options"
+                           name="optionToSearch"
+                           required
+                           />
+                    <datalist id="options">
+                        <option>students personal Infor</option>
+                        <option>student marks</option>
+                    </datalist>
+                </div>
+                <div>
+                    <input
+                           type="submit"
+                           value="Search"
+                           id="searchButtn"
+                           />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

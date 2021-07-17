@@ -1,0 +1,28 @@
+input{
+    display: block;
+}
+input:required{
+    border-left: solid 10px red;
+    border-bottom: solid 2px red;
+}
+#button{
+    border-radius: 10px;
+    background-color: red;
+}
+input:required:valid{
+    border-bottom: none;
+}
+form div {
+    margin-top:15px; 
+}
+.form{
+    width: 500px;
+    margin: auto;
+}
+h3{
+    position: relative;
+    left: 20px;
+}
+body{
+    background-color: burlywood;
+}

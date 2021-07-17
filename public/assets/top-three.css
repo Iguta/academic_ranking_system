@@ -1,0 +1,16 @@
+table, th, td{
+    padding: 10px;
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+caption{
+    font-weight: 700;
+}
+th{
+    text-align: left;
+}
+.table{
+    margin: auto;
+    padding: 10px;
+    width: 700px;
+}

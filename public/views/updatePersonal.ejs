@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Update Students Personal Information</title>
+		<link rel="stylesheet" href="/updatePersonal.css">
+	</head>
+	<body>
+		<h4>Update Students Personal Information</h4>
+		<div id="update-personal-infor">
+			<form method="post" action="/post-update-personal-infor">
+				<label for="studentId">Enter student id:</label>
+				<input type="number"
+					   min="1"
+					   size='3'
+					   required
+					   placeholder="student id"
+                       autofocus
+                       name="studentId"
+					   />
+				<label for="field" id="field">Choose field to update</label>
+				<input
+					   list="fields" 
+					   name="field" 
+					   id="field"
+					   required
+					   />
+				<datalist id="fields">
+					<option>first name</option>
+					<option>last name</option>
+				</datalist>
+				
+				<label for="option-value">Enter the name value:</label>
+				<input
+					   type="text"
+					   required
+					   minlength="3"
+                       maxlength="20"
+                       name="nameUpdateValue"
+					   />
+				<input
+					   type="submit"
+					   value="UPDATE"/>
+			</form>
+	</body>
+</html>

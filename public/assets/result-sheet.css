@@ -1,0 +1,13 @@
+table, th, td{
+    padding: 10px;
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+.table{
+    width: 700px;
+    margin: auto;
+}
+
+caption{
+    font-weight: 700;
+}

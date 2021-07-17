@@ -1,0 +1,37 @@
+form div{
+	font-size: 25px;
+	width: 270px;
+	margin: auto;
+	margin-top: 20px;
+}
+input{
+	display: block;
+    font-size: 20px;
+    width: 200px;
+}
+#updateButtn{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	border-radius: 15px;
+    background-color: aqua;
+    width: 100px;
+    text-align: center;
+    margin-left: 70px;
+}
+form div:last-child{
+	margin-bottom: 20px;
+}
+h3{
+	text-align: center;
+}
+input:required{
+	border-left: solid 10px red;
+	border-bottom: solid 5px red;
+}
+input:required:valid{
+	border-bottom: none;
+}
+
+body{
+	background-color: burlywood;
+}

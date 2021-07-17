@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/top-three.css"/>
+        <title>Top Three</title>
+    </head>
+    <body>
+        <div class="table">
+            <table>
+                <caption>Top Three Students</caption>
+                <tr>
+                    <th>StudentId</th>
+                    <th>firstName</th>
+                    <th>lastName</th>
+                    <th>Maths</th>
+                    <th>English</th>
+                    <th>Kiswahili</th>
+                    <th>Science</th>
+                    <th>GHC_CRE</th>
+                    <th>Averege Marks</th>
+                </tr>
+                <% data.forEach( (item) => { %>
+                    <tr>
+                        <td> <%= item.studentId %></td>
+                        <td> <%= item.firstName %></td>
+                        <td> <%= item.lastName %></td>
+                        <td> <%= item.Maths %></td>
+                        <td> <%= item.English %></td>
+                        <td> <%= item.Kiswahili %></td>
+                        <td> <%= item.Science %></td>
+                        <td> <%= item.GHC_CRE %></td>
+                        <td> <%= item.AverageMarks %></td>
+                    </tr>
+
+                <% });%>
+            </table>
+        </div>
+    </body>
+</html>

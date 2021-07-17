@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result Sheet</title>
+        <link rel="stylesheet" href="/result-sheet.css"/>
+    </head>
+    <body>
+        <div class="table">
+            <table>
+                <caption>Result Sheet</caption>
+                <tr>
+                    <th>studentId</th>
+                    <th>firstName</th>
+                    <th>lastName</th>
+                    <th>English</th>
+                    <th>Maths</th>
+                    <th>Kiswahili</th>
+                    <th>Science</th>
+                    <th>GHC_CRE</th>
+                    <th>Average Marks</th>
+                </tr>
+                <% data.forEach( (item) => { %>
+                    <tr>
+                        <td> <%= item.studentId %></td>
+                        <td> <%= item.firstName %></td>
+                        <td> <%= item.lastName %></td>
+                        <td> <%= item.Maths %></td>
+                        <td> <%= item.English %></td>
+                        <td> <%= item.Kiswahili %></td>
+                        <td> <%= item.Science %></td>
+                        <td> <%= item.GHC_CRE %></td>
+                        <td> <%= item.AverageMarks %></td>
+                    </tr>
+
+                <% });%>      
+            </table>
+        </div>
+    </body>
+</html>
